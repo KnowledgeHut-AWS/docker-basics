@@ -1,7 +1,7 @@
-FROM ubuntu:18.04
+FROM python:alpine
 
 # Copy source
-COPY . /app
+COPY app/* /app/
 
 #execute python
 CMD python /app/app.py
